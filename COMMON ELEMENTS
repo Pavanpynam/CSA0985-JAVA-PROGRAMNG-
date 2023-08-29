@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+class com {
+	public static void main(String[]  a,String[] b)
+	{
+Set<String> set = new HashSet<>();
+for (int i = 0; i < a.length; i++) {
+for (int j = 0; j < b.length; j++) {
+if (a[i] == b[j]) {
+set.add(a[i]);
+break;
+}
+}
+}
+for (String i : set) {
+System.out.print(i + " ");
+}
+}
+	public static void main(String[] args)
+	{
+		String[] a= { "as", "in", "mo", "or", "ha" };
+		String[] b = { "as", "or", "and" };
+		System.out.println("Array 1: "+ Arrays.toString(a));
+		System.out.println("Array 2: "+ Arrays.toString(b));
+		System.out.print("Common Elements: ");
+		main(a, b);
+	}
+}
